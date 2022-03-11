@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+:root {
+    --color-primary: #36d0db;
+    --color-white: #fff;
+    --color-background: #fcf2fc;
+    --color-primary-variant: #2fbdc7;
+    --color-dark: #afadba;
+    --color-green-light: #3dff74;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--color-background);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    gap: 0px;
+    border-radius: 15px;
+}
+
+.container .join {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: var(--color-white);
+    height: 240px;
+    padding: 40px;
+    padding-left: 55px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container .join h2 {
+    color: var(--color-primary-variant);
+    margin-bottom: 25px;
+    text-shadow: var(--color-primary-variant) 1px 1px 2px;
+}
+
+.container .join h3 {
+    color: var(--color-green-light);
+    margin-bottom: 12.5px;
+}
+
+.container .join h4 {
+    line-height: 30px;
+    color: rgba(0, 0, 0, .3);
+}
+
+
+.container .subs {
+    background: var(--color-primary-variant);
+    height: 280px;
+    padding-top: 50px;
+    /*padding-left: 40px;*/
+    border-bottom-left-radius: 15px;
+}
+
+.container .subs .subtitulo {
+    color: rgba(255, 255, 255, .8);
+    padding-bottom: 25px;
+    padding-left: 55px;
+    text-align:left;
+}
+
+.container .subs b {
+    color: rgba(255, 255, 255, .8);
+    font-size: 2.0rem;
+    padding-right: 15px;
+}
+
+.container .subs p {
+    color: rgba(255, 255, 255, .4);
+    padding-bottom: 13px;
+    padding-left: 60px;
+    text-align:left;
+}
+
+.container .subs .valordia {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, .6);
+    padding-bottom: 28px;
+    text-align: center;
+}
+
+.container .subs .signup {
+    justify-content: center;
+    align-items: center;
+    background: var(--color-green-light);
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    width: 270px;
+    margin-left:42px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 7px;
+}
+
+.container .why-us {
+    background: var(--color-primary);
+    height: 280px;
+    padding-top: 50px;
+    padding-left: 40px;
+    border-bottom-right-radius: 15px;
+}
+
+.container .why-us h3 {
+    color: rgba(255, 255, 255, .8);
+    padding-bottom: 20px;
+}
+
+.container .why-us p {
+    font-size: 0.9rem;
+    line-height: 21px;
+    color: rgba(255, 255, 255, .7);
+}
+
+/*
+@media (max-width: 750px) {
+    .container {
+        grid-template-columns: 1fr;
+        overflow: scroll;
+        
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+}
+
+.container .join {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-top-right-radius: 0px;
+}
+
+.container .subs {
+    padding-top: 50px;
+}
+
+.container .subs .subtitulo {
+    text-align: center;
+    padding: 0;
+    padding-bottom: 20px;
+
+}
+
+.container .subs p {
+    text-align: center;
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.container .subs .signup {
+    display: flex;
+    background: var(--color-green-light);
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    border-radius: 7px;
+    
+}
+*/
